@@ -1,6 +1,6 @@
 namespace VulnData.DataCollector.Domain.Options;
 
-public class NvdOption
+public class NvdOptions
 {
     public string ApiKey { get; set; } = string.Empty;
 }

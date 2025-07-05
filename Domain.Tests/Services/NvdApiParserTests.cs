@@ -13,17 +13,17 @@ public class NvdApiParserTests
 {
     private readonly NvdApiParser _nvdApiParser;
     private readonly VulnerabilityFetcher _vulnerabilityFetcher;
-    private readonly string TestApiKey = "2a5ee03f-63e9-4f30-99ef-fe170e919ea5";
+    private readonly string TestApiKey = "";
     
     public NvdApiParserTests()
     {
         var services = new ServiceCollection();
         services.AddHttpClient();
-        services.AddSingleton<IOptions<NvdOption>>(new OptionsWrapper<NvdOption>(new NvdOption { ApiKey = TestApiKey }));
+        services.AddSingleton<IOptions<NvdOptions>>(new OptionsWrapper<NvdOptions>(new NvdOptions { ApiKey = TestApiKey }));
         
         var provider = services.BuildServiceProvider();
         _vulnerabilityFetcher = new VulnerabilityFetcher(
-            provider.GetRequiredService<IOptions<NvdOption>>(),
+            provider.GetRequiredService<IOptions<NvdOptions>>(),
             provider.GetRequiredService<IHttpClientFactory>()
         );
         
@@ -34,8 +34,6 @@ public class NvdApiParserTests
     [Fact]
     public async Task NvdApiParser_ParseDataAsync_ReturnObject()
     {
-        //Arrange
-        
         //Act
         var result = await _nvdApiParser.ParseDataAsync();
 

@@ -106,7 +106,7 @@ builder.Services.AddDbContextFactory<VulnContext>(options =>
         .EnableSensitiveDataLogging();
 });
 
-builder.Services.Configure<NvdOption>(builder.Configuration.GetSection("Nvd"));
+builder.Services.Configure<NvdOptions>(builder.Configuration.GetSection("Nvd"));
 
 builder.UseKeycloakAuth();
 

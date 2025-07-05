@@ -16,7 +16,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\VulnData.DataCollector.Application\VulnData.DataCollector.Application.csproj" />
-      <ProjectReference Include="..\VulnData.DataCollector.Domain\VulnData.DataCollector.Domain.csproj" />
+      <ProjectReference Include="..\VulnData.DataCollector.Infrastructure\VulnData.DataCollector.Infrastructure.csproj" />
     </ItemGroup>
 
 </Project>

@@ -4,7 +4,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VuldData.DataCollector.Web"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VulnData.DataCollector.Application", "VulnData.DataCollector.Application\VulnData.DataCollector.Application.csproj", "{82570683-74D3-4887-B92D-B93A20A950D3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VulnData.DataCollector.Domain", "VulnData.DataCollector.Domain\VulnData.DataCollector.Domain.csproj", "{6F113448-8303-4FE8-A771-ADE1E34DC414}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VulnData.DataCollector.Infrastructure", "VulnData.DataCollector.Infrastructure\VulnData.DataCollector.Infrastructure.csproj", "{6F113448-8303-4FE8-A771-ADE1E34DC414}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VulnData.DataCollector.Persistance", "VulnData.DataCollector.Persistance\VulnData.DataCollector.Persistance.csproj", "{0612D133-96DA-48BC-BA38-AF5917F39655}"
 EndProject
